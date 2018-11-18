@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>WEB1 - html</title>
     <style >
+    body{
+      margin: 0px;
+    }
       a {
         color: black;
         text-decoration: none;
@@ -14,36 +17,58 @@
       #active{
         color: red;
       }
+
       h1{
-        font-size: 45px;
+        margin-bottom: auto;
         text-align: center;
-      }
+         border-bottom:1px solid gray;
+         padding-bottom: 20px;
+        }
+        ol{
+         border-right:1px solid gray;
+         width: 100px;
+         margin: 0px;
+         padding: 20px;
+        }
+        #grid{
+          display: grid;
+          grid-template-columns: 150px 1fr;
+        }
+
     </style>
   </head>
   <body>
-    <h1><a href="index.html">Web</a></h1>
-    <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class="saw" id="active">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    <li><a href="box.html">BoxModel</a></li>
-    </ol>
 
-    <!--
     <h1><a href="index.html">Web</a></h1>
-    <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    </ol>
-  -->
+<div  id="grid">
+  <ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <li><a href="3.html">JavaScript</a></li>
+  <li><a href="box.html">BoxModel</a></li>
+  <li><a href="grid.html">gridModel</a></li>
+  </ol>
 
-    <h2>CSS</h2>
-    <p>
-      CSS is a language that describes the style of an HTML document.
-      CSS describes how HTML elements should be displayed.
-      This tutorial will teach you CSS from basic to advanced.
-   </p>
-   <img  src="coding.jpg" width="50%">
+  <!--
+  <h1><a href="index.html">Web</a></h1>
+  <ol>
+  <li><a href="1.html">HTML</a></li>
+  <li><a href="2.html">CSS</a></li>
+  <li><a href="3.html">JavaScript</a></li>
+  </ol>
+-->
+<div>
+  <h2>CSS</h2>
+  <p>
+    CSS is a language that describes the style of an HTML document.
+    CSS describes how HTML elements should be displayed.
+    This tutorial will teach you CSS from basic to advanced.
+ </p>
+ <img  src="coding.jpg" width="50%">
+</div>
+</div>
+
+
+
   </body>
 </html>

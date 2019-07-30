@@ -7,19 +7,16 @@
 
   </head>
   <body>
-    <article>
- 
-    </article>
+    
+     <ol>
+       <li>html</li>
+       <li>css</li>
+       <li>javascript</li>
+    </ol>
      <input type="button" name="" value="fetch" onclick="
-     fetch('html').then(
-                       function(response){
-                       response.text().then(
-                                function(text){  
-                                                         document.querySelector('article').innerHTML = text;
-                                  }
-                            )
-                                        }
-                     )
+     fetch('html').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
      "  >
+    <article>
+    </article>
   </body>
 </html>

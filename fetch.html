@@ -7,16 +7,21 @@
 
   </head>
   <body>
-    
+
      <ol>
-       <li>html</li>
-       <li>css</li>
-       <li>javascript</li>
-    </ol>
-     <input type="button" name="" value="fetch" onclick="
-     fetch('html').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
-     "  >
+       <li onclick="
+       fetch('html').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
+       ">html</li>
+       <li onclick="
+       fetch('css').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
+       ">css</li>
+       <li onclick="
+       fetch('javascript').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
+       ">javascript</li>
+    </ol>                   
     <article>
     </article>
+
+
   </body>
 </html>

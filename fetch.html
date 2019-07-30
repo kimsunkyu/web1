@@ -8,10 +8,7 @@
   </head>
   <body>
 
-     <ol>
-       <li onclick="ff('html')">html</li>
-       <li onclick="ff('css')">css</li>
-       <li onclick="ff('javascript')">javascript</li>
+     <ol id="list1">
     </ol>
     <article>
     </article>
@@ -19,6 +16,7 @@
       function ff(name){
         fetch(name).then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
       }
+      fetch('list').then(function(response){response.text().then(function(text){document.querySelector('#list1').innerHTML = text;})})
     </script>
 
   </body>

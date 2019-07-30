@@ -9,19 +9,17 @@
   <body>
 
      <ol>
-       <li onclick="
-       fetch('html').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
-       ">html</li>
-       <li onclick="
-       fetch('css').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
-       ">css</li>
-       <li onclick="
-       fetch('javascript').then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
-       ">javascript</li>
-    </ol>                   
+       <li onclick="ff('html')">html</li>
+       <li onclick="ff('css')">css</li>
+       <li onclick="ff('javascript')">javascript</li>
+    </ol>
     <article>
     </article>
-
+    <script>
+      function ff(name){
+        fetch(name).then(function(response){response.text().then(function(text){document.querySelector('article').innerHTML = text;})})
+      }
+    </script>
 
   </body>
 </html>

@@ -7,11 +7,16 @@
 
   </head>
   <body>
+    <article>
+ 
+    </article>
      <input type="button" name="" value="fetch" onclick="
-     fetch('css').then(
+     fetch('html').then(
                        function(response){
                        response.text().then(
-                                function(text){  alert(text);}
+                                function(text){  
+                                                         document.querySelector('article').innerHTML = text;
+                                  }
                             )
                                         }
                      )

@@ -1,4 +1,4 @@
 <li onclick="ff('html')">html</li>
 <li onclick="ff('css')">css</li>
 <li onclick="ff('javascript')">javascript</li>
-<li onclick="ff('javascript')">skkim</li>
+<li">skkim</li>
